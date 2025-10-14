@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaDownload, FaArrowRight, FaTrophy, FaMedal } from 'react-icons/fa';
+import profilePhoto from '../assets/formal.jpeg'; // Import foto
 
 const Hero = () => {
   const [textIndex, setTextIndex] = useState(0);
@@ -70,16 +71,16 @@ const Hero = () => {
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center relative z-10">
         
-        {/* Profile Avatar */}
+        {/* Profile Avatar - DENGAN FOTO */}
         <div className="relative mb-6 mx-auto w-32 h-32 group">
           <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div className="relative w-32 h-32 rounded-full border-4 border-yellow-500 overflow-hidden bg-gray-800 shadow-2xl shadow-yellow-500/25 group-hover:scale-105 transition-transform duration-500">
-            <div className="w-full h-full bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-3xl font-black text-white">FM</div>
-                <div className="text-xs font-semibold text-white/90">Farel</div>
-              </div>
-            </div>
+            {/* Ganti dengan foto */}
+            <img 
+              src={profilePhoto} 
+              alt="Farel Maryam"
+              className="w-full h-full object-cover"
+            />
           </div>
           
           {/* Achievement Badge */}
@@ -135,7 +136,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* CTA Buttons - FIXED dengan Anchor Links */}
+        {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-8">
           <button
             onClick={() => scrollToSection('projects')}
@@ -155,7 +156,7 @@ const Hero = () => {
         </div>
 
         {/* Tech Stack */}
-        <div className="mb-6">
+        <div className="mb-16">
           <p className="text-gray-400 text-xs mb-3">TECH I WORK WITH</p>
           <div className="flex flex-wrap justify-center gap-2">
             {['React', 'JavaScript', 'Tailwind', 'Laravel', 'PHP', 'MySQL', 'Bootstrap'].map((tech, index) => (
@@ -165,20 +166,20 @@ const Hero = () => {
             ))}
           </div>
         </div>
-
-        {/* Scroll Indicator */}
-        <div className="mt-8 animate-bounce">
-          <button
-            onClick={() => scrollToSection('about')}
-            className="flex flex-col items-center space-y-1 cursor-pointer"
-          >
-            <span className="text-gray-500 text-xs tracking-widest">SCROLL</span>
-            <div className="w-4 h-6 border border-yellow-500 rounded-full flex justify-center">
-              <div className="w-1 h-2 bg-yellow-500 rounded-full mt-1 animate-pulse"></div>
-            </div>
-          </button>
-        </div>
         
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 animate-bounce z-50">
+        <button
+          onClick={() => scrollToSection('about')}
+          className="flex flex-col items-center space-y-1 cursor-pointer group bg-black/20 backdrop-blur-sm rounded-lg px-3 py-2 hover:bg-black/40 transition-all duration-300"
+        >
+          <span className="text-gray-400 text-xs tracking-widest group-hover:text-yellow-500 transition-colors duration-300">SCROLL</span>
+          <div className="w-4 h-6 border border-yellow-500 rounded-full flex justify-center group-hover:border-yellow-400 transition-colors duration-300">
+            <div className="w-1 h-2 bg-yellow-500 rounded-full mt-1 animate-pulse group-hover:bg-yellow-400 transition-colors duration-300"></div>
+          </div>
+        </button>
       </div>
 
       <style jsx>{`

@@ -36,7 +36,7 @@ const contactMethods = [
     name: "Instagram",
     icon: FaInstagram,
     link: "https://instagram.com/farelhajiri02",
-    detail: "@farelmaryam",
+    detail: "@farelhajiri02",
     color: "hover:text-pink-500",
     bgColor: "hover:bg-pink-500/10",
   },
