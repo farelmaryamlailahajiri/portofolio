@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { FaDownload, FaArrowRight, FaTrophy, FaMedal } from 'react-icons/fa';
-import profilePhoto from '../assets/formal.jpeg'; // Import foto
+import { FaArrowRight, FaTrophy, FaMedal } from 'react-icons/fa';
+import profilePhoto from '../assets/formal.jpeg';
 
 const Hero = () => {
   const [textIndex, setTextIndex] = useState(0);
@@ -71,11 +71,10 @@ const Hero = () => {
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center relative z-10">
         
-        {/* Profile Avatar - DENGAN FOTO */}
+        {/* Profile Avatar */}
         <div className="relative mb-6 mx-auto w-32 h-32 group">
           <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div className="relative w-32 h-32 rounded-full border-4 border-yellow-500 overflow-hidden bg-gray-800 shadow-2xl shadow-yellow-500/25 group-hover:scale-105 transition-transform duration-500">
-            {/* Ganti dengan foto */}
             <img 
               src={profilePhoto} 
               alt="Farel Maryam"
@@ -137,10 +136,12 @@ const Hero = () => {
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-8">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
           <button
             onClick={() => scrollToSection('projects')}
-            className="group bg-gradient-to-r from-yellow-500 to-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-xl shadow-lg shadow-yellow-500/25 hover:shadow-yellow-500/40 hover:scale-105 transition-all duration-300 cursor-pointer uppercase tracking-wider flex items-center gap-2 text-sm"
+            onTouchStart={() => scrollToSection('projects')}
+            className="group bg-gradient-to-r from-yellow-500 to-yellow-600 text-gray-900 font-bold py-4 px-8 rounded-xl shadow-lg shadow-yellow-500/25 hover:shadow-yellow-500/40 hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer uppercase tracking-wider flex items-center gap-2 text-sm select-none touch-manipulation"
+            style={{ minHeight: '44px' }}
           >
             <span>See My Projects</span>
             <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
@@ -148,7 +149,9 @@ const Hero = () => {
           
           <button
             onClick={() => scrollToSection('skills')}
-            className="group border-2 border-yellow-500 text-yellow-500 font-semibold py-3 px-6 rounded-xl hover:bg-yellow-500 hover:text-black transition-all duration-300 uppercase tracking-wider flex items-center gap-2 text-sm"
+            onTouchStart={() => scrollToSection('skills')}
+            className="group border-2 border-yellow-500 text-yellow-500 font-semibold py-4 px-8 rounded-xl hover:bg-yellow-500 hover:text-black active:scale-95 transition-all duration-300 uppercase tracking-wider flex items-center gap-2 text-sm select-none touch-manipulation"
+            style={{ minHeight: '44px' }}
           >
             <FaMedal />
             <span>My Achievements</span>
@@ -156,7 +159,7 @@ const Hero = () => {
         </div>
 
         {/* Tech Stack */}
-        <div className="mb-16">
+        <div className="mb-8">
           <p className="text-gray-400 text-xs mb-3">TECH I WORK WITH</p>
           <div className="flex flex-wrap justify-center gap-2">
             {['React', 'JavaScript', 'Tailwind', 'Laravel', 'PHP', 'MySQL', 'Bootstrap'].map((tech, index) => (
@@ -169,18 +172,7 @@ const Hero = () => {
         
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 animate-bounce z-50">
-        <button
-          onClick={() => scrollToSection('about')}
-          className="flex flex-col items-center space-y-1 cursor-pointer group bg-black/20 backdrop-blur-sm rounded-lg px-3 py-2 hover:bg-black/40 transition-all duration-300"
-        >
-          <span className="text-gray-400 text-xs tracking-widest group-hover:text-yellow-500 transition-colors duration-300">SCROLL</span>
-          <div className="w-4 h-6 border border-yellow-500 rounded-full flex justify-center group-hover:border-yellow-400 transition-colors duration-300">
-            <div className="w-1 h-2 bg-yellow-500 rounded-full mt-1 animate-pulse group-hover:bg-yellow-400 transition-colors duration-300"></div>
-          </div>
-        </button>
-      </div>
+      {/* Scroll Indicator DIHAPUS */}
 
       <style jsx>{`
         @keyframes float {
