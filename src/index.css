@@ -1,0 +1,29 @@
+/* Ini adalah file CSS terpisah yang akan dimuat oleh index.html 
+(atau main.jsx di lingkungan Vite) untuk menentukan gaya global dan font.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+/* Reset dan Konfigurasi Dasar */
+:root {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Memastikan elemen root dan body mengisi seluruh viewport */
+body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Kelas khusus untuk memastikan font Inter digunakan */
+.font-inter { 
+  font-family: 'Inter', sans-serif; 
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* cegah scroll horizontal */
+}
+
