@@ -162,7 +162,7 @@ const Hero = () => {
         <div className="mb-8">
           <p className="text-gray-400 text-xs mb-3">TECH I WORK WITH</p>
           <div className="flex flex-wrap justify-center gap-2">
-            {['React', 'JavaScript', 'Tailwind', 'Laravel', 'PHP', 'MySQL', 'Bootstrap'].map((tech, index) => (
+            {['React', 'JavaScript', 'Laravel', 'PHP', 'MySQL', 'Bootstrap'].map((tech, index) => (
               <div key={index} className="px-3 py-1 bg-gray-800/50 rounded-lg border border-gray-700 backdrop-blur-sm">
                 <span className="text-gray-300 font-medium text-xs">{tech}</span>
               </div>
