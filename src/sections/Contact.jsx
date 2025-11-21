@@ -12,7 +12,7 @@ const contactMethods = [
     name: "WhatsApp",
     icon: FaWhatsapp,
     link: "https://wa.me/6285394786878",
-    detail: "+62 812 3456 7890",
+    detail: "+62 853-9478-6878",
     color: "hover:text-green-500",
     bgColor: "hover:bg-green-500/10",
   },

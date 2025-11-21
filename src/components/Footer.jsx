@@ -23,7 +23,7 @@ const Footer = () => {
           <p className="text-sm text-gray-500 flex items-center justify-center gap-2">
             &copy; {currentYear} Crafted with 
             <FaHeart className="text-red-500" /> 
-            using <span className="text-yellow-500">React & Tailwind</span>
+            using <span className="text-yellow-500">React</span>
           </p>
         </div>
 
