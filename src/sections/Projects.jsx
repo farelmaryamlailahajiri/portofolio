@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaExternalLinkAlt, FaGithub, FaFigma, FaLaravel, FaReact } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaGithub, FaFigma, FaLaravel, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
 
 const projectsData = [
   {
@@ -12,6 +12,16 @@ const projectsData = [
     type: "web-app",
     icon: FaLaravel,
     features: ["Tracer Study", "Survei Kepuasan", "Dashboard Admin", "Laporan Alumni"]
+  },
+  {
+    title: "Aksara Cita Pustaka",
+    description: "Website perusahaan penerbitan buku dengan fitur CRUD untuk manajemen buku dan artikel. Frontend modern dengan backend API sederhana.",
+    tech: ["React", "MySQL", "PHP Native", "Tailwind CSS"],
+    githubUrl: "https://github.com/farelmaryamlailahajiri/aksaracitapustaka",
+    liveUrl: "https://aksaracitapustaka.com/",
+    type: "fullstack",
+    icon: FaReact,
+    features: ["CRUD Buku", "CRUD Artikel", "Admin Dashboard", "Responsive Design"]
   },
   {
     title: "K3 Company Landing Page",
@@ -39,6 +49,7 @@ const Projects = () => {
   const getProjectTypeColor = (type) => {
     switch(type) {
       case 'web-app': return 'bg-blue-500/20 text-blue-400 border-blue-500/30';
+      case 'fullstack': return 'bg-orange-500/20 text-orange-400 border-orange-500/30';
       case 'website': return 'bg-green-500/20 text-green-400 border-green-500/30';
       case 'ui-ux': return 'bg-purple-500/20 text-purple-400 border-purple-500/30';
       default: return 'bg-gray-500/20 text-gray-400 border-gray-500/30';
@@ -48,6 +59,7 @@ const Projects = () => {
   const getProjectTypeText = (type) => {
     switch(type) {
       case 'web-app': return 'Web Application';
+      case 'fullstack': return 'Full Stack';
       case 'website': return 'Website';
       case 'ui-ux': return 'UI/UX Design';
       default: return 'Project';
@@ -64,10 +76,10 @@ const Projects = () => {
           </span>
         </h2>
         <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
-          3 real projects showcasing my skills in web development and UI/UX design
+          4 real projects showcasing my skills in web development and UI/UX design
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {projectsData.map((project, index) => (
             <div
               key={index}

@@ -34,7 +34,7 @@ const About = () => {
               <h3 className="text-2xl font-bold text-yellow-500 mb-6 text-center">Pencapaian</h3>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-6 bg-yellow-500/10 rounded-xl hover:bg-yellow-500/20 transition-all duration-300">
-                  <div className="text-3xl font-bold text-yellow-500 mb-2">1+</div>
+                  <div className="text-3xl font-bold text-yellow-500 mb-2">2+</div>
                   <div className="text-gray-300 font-medium">Tahun Belajar</div>
                   <div className="text-gray-500 text-sm mt-1">Programming</div>
                 </div>
@@ -44,7 +44,7 @@ const About = () => {
                   <div className="text-gray-500 text-sm mt-1">Web Development</div>
                 </div>
                 <div className="text-center p-6 bg-yellow-500/10 rounded-xl hover:bg-yellow-500/20 transition-all duration-300">
-                  <div className="text-3xl font-bold text-yellow-500 mb-2">19</div>
+                  <div className="text-3xl font-bold text-yellow-500 mb-2">22</div>
                   <div className="text-gray-300 font-medium">Prestasi</div>
                   <div className="text-gray-500 text-sm mt-1">Kompetisi</div>
                 </div>

@@ -148,6 +148,27 @@ const achievementsData = [
     year: "2025",
     type: "competition", 
     position: "Juara 1"
+  },
+   {
+    name: "Juara 1 Esai RK INK BLEND Competition",
+    issuer: "Universitas Siliwangi",
+    year: "2025",
+    type: "competition",
+    position: "Juara 1"
+  },
+  {
+    name: "Juara 1 Poster Entrepreneur Festival",
+    issuer: "Politeknik Negeri Malang",
+    year: "2025",
+    type: "competition",
+    position: "Juara 1"
+  },
+  {
+    name: "Juara 3 & Favorite Digital Marketing Video Entrepreneur Festival",
+    issuer: "Politeknik Negeri Malang",
+    year: "2025",
+    type: "competition",
+    position: "Juara 3 & Favorite"
   }
 ];
 
