@@ -122,11 +122,11 @@ const Hero = () => {
         {/* Real Stats */}
         <div className="grid grid-cols-3 gap-4 max-w-md mx-auto mb-6">
           <div className="text-center p-3 bg-gray-800/50 rounded-xl border border-gray-700">
-            <div className="text-xl font-bold text-yellow-500">3</div>
+            <div className="text-xl font-bold text-yellow-500">4</div>
             <div className="text-gray-400 text-xs uppercase tracking-wider">Projects</div>
           </div>
           <div className="text-center p-3 bg-gray-800/50 rounded-xl border border-gray-700">
-            <div className="text-xl font-bold text-yellow-500">19+</div>
+            <div className="text-xl font-bold text-yellow-500">22</div>
             <div className="text-gray-400 text-xs uppercase tracking-wider">Achievements</div>
           </div>
           <div className="text-center p-3 bg-gray-800/50 rounded-xl border border-gray-700">
